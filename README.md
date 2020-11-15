@@ -19,13 +19,13 @@ From the first image, you can see some type of objects, enemy and player. In the
 </p>
   
 <p align="center">
-  <img src="forReadME/main_flow.png">
+  <img src="forReadME/4.gif">
 </p>
 
 <h1 align="center"> The main concepts of the application. </h1>
 
 <p align="center">
-  <img src="forReadME/1.gif">
+  <img src="forReadME/main_flow.png">
 </p>
 
 First of all, classes of the movable and static objects are extended from the **GameObject** abstract class.GameObject class holds positions and speeds (according to arrows of the X and Y), gravity value, info of being movable, ID number,  boundaries and also tick(), render() methods. 
