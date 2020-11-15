@@ -44,6 +44,7 @@ First of all, classes of the movable and static objects are extended from the **
 <p align="center">
   <img src="Images/1thLevel.png">
 </p>
+I designed an image which represents the game map. Namely, it keeps initial coordinates of each objects. For example : player, movable and static blocks, enemies, fires, coins and etc. How does it work? After loading  the map image file as BufferedImage, program started  Loop along pixels and obtain RGB channels for each pixel.For example, if RGB color of pixel is RGB(34 ,177,76) - like green, program will initiliaze new instance of Player class. After loop, now you should have all information which you can use in object creation.Pixsel coordinates of referred code (key or barcode) will give you the position of your object on the level/world. (If you want, you can check constructLevel() method in Game Class).
 
 <h2 align="center">tick() and render() Methods</h2>
 <b/>
