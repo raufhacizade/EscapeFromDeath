@@ -36,7 +36,14 @@ In the final part of first level, there is Monster which is much smarter and str
   <img src="forReadME/main_flow.png">
 </p>
 
-First of all, classes of the movable and static objects are extended from the **GameObject** abstract class.GameObject class holds positions and speeds (according to arrows of the X and Y), gravity value, info of being movable, ID number,  boundaries and also tick(), render() methods. 
+First of all, classes of the movable and static objects are extended from the **GameObject** abstract class.GameObject class holds positions and speeds (according to arrows of the X and Y), gravity value, info of being movable, ID number,  boundaries and also tick(), render() methods.The ID actually is an Enum type and it is used to differentiate objects types.
+
+<h2 align="center">The Game Map</h2>
+<b/>
+
+<p align="center">
+  <img src="Images/1thLevel.png">
+</p>
 
 <h2 align="center">tick() and render() Methods</h2>
 <b/>
@@ -77,6 +84,24 @@ To check collision of two or more object, we use their boundaries which are in s
     public Rectangle rightBounds() {
         return new Rectangle(x - 5 + width - width / 4, y + height / 6, width / 4 + 5, height - height / 3);
     }
+    
+Using these rectangles and also adding some conditions it’s possible to track the behavior of the collision. For example: If an object area have been crossed with main getBound() rectangle (Pink rectangle). It means there was a collision between these two objects. Now it’s time to check the nature of this collision. - If it crossed with upBound (Green rectangle) and the velocity along Y (velY) of crossed object is positive (downward), You can say that this object is falling to players head and collision behavior has to be done for this situation
+<b/>
 
+<h2 align="center">Camera</h2>
+Camera represents a realization which helps on following objects in motion creating a simple following Cameraman effect. When you have Large world game which runs out from your screen canvas, you should have a system which follows your object of interest (often Player) and transfers world as this object or region always be rendered on your canvas/screen.
 
- 
+Although, it looks like we transfer screen/view towards to region of interest, we can’t change pixel coordinates of our screen. And our created ‘g’ (Graphics ) will be always rendered from its (0,0) beginning from the top left of our display. To simulate such result you can use following Java code where you render the world objects.
+
+        Graphics2D g2d = (Graphics2D) g;
+
+        g2d.translate(-camera.getX(), -camera.getY()); //FIRST LINE
+        
+        handler.render(g);
+        if (gameState == STATE.GAME)
+            hud.render(g);
+            
+        g2d.translate(camera.getX(), camera.getY());  //SECOND LINE
+        g.dispose();
+
+Every code written inside of this 2 translating line will be transferred with world. It means if we want some drawings to not be affected by camera movement and always be rendered at the same place/screen coordinate, we should put them outside of this code. The translate coordinates/Vector represented as “camera.getX(), camera.getY()” are calculated displacement of object of interest in game world. As you see first we translate world enough to render objects in such manner that interest region falls to our screen size/view. 
