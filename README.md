@@ -1,4 +1,6 @@
 # EscapeFromDeath
+![](forReadME/1.gif)
+<center>Centered text</center>
 ## This game is fully written in java. If you want to play this game, just download the source code and run.
 
 This Game is a 2D Java platform game. For the explanation of the game, I divide the Game into 4 parts and show them in gif files
