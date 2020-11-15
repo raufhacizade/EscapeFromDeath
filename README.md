@@ -1,5 +1,14 @@
 # EscapeFromDeath
-<p style="text-align: center;"> ![](forReadME/1.gif) </p>
+
+<p align="center">
+  <b>Some Links:</b><br>
+  <a href="#">Link 1</a> |
+  <a href="#">Link 2</a> |
+  <a href="#">Link 3</a>
+  <br><br>
+  <img src="forReadME/1.gif">
+</p>
+
 <center>Centered text</center>
 ## This game is fully written in java. If you want to play this game, just download the source code and run.
 
