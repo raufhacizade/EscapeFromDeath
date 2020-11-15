@@ -1,16 +1,10 @@
-# EscapeFromDeath
+<h1 align="center"> EscapeFromDeath </h1>
 
 <p align="center">
-  <b>Some Links:</b><br>
-  <a href="#">Link 1</a> |
-  <a href="#">Link 2</a> |
-  <a href="#">Link 3</a>
-  <br><br>
   <img src="forReadME/1.gif">
 </p>
 
-<center>Centered text</center>
-## This game is fully written in java. If you want to play this game, just download the source code and run.
+<h2 align="center"> This game is fully written in java. If you want to play this game, just download the source code and run. </h2>
 
 This Game is a 2D Java platform game. For the explanation of the game, I divide the Game into 4 parts and show them in gif files
 
