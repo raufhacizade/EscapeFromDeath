@@ -28,7 +28,7 @@ One of the other movable object is Ice Dams.If player passes under the  Ice Dams
 
 In the final part of first level, there is Monster which is much smarter and stronger than other enemies. If player enters in angle of vision of Monster, then it starts to follow player and nothing can damage this enemy. If player has enough coins and gets closer to the Main Door, then door will be opened and player can pass to second level.
 
-<h1 align="center"> The main concepts of the application. </h1>
+<h1 align="center"> The Main Concepts of the Application. </h1>
 
 <p align="center">
   <img src="forReadME/main_flow.png">
@@ -36,7 +36,7 @@ In the final part of first level, there is Monster which is much smarter and str
 
 First of all, classes of the movable and static objects are extended from the **GameObject** abstract class.GameObject class holds positions and speeds (according to arrows of the X and Y), gravity value, info of being movable, ID number,  boundaries and also tick(), render() methods. 
 
-<h2 align="center">tick() and render() methods</h2>
+<h2 align="center">tick() and render() Methods</h2>
 
 The **tick()** and **render()** methods are the most important methods of our program. Both of these methods are called 60 times each second. The main purpose of the tick method is to update data of each object (for example its position, x and y speeds, acceleration and etc). The render method is used to draw our shape of objects.
 
@@ -45,4 +45,6 @@ Game.run() ->  Game.tick() -> handler.tick() -> All objects -> tick()**
 
 **Rendering Flow :
 Game.run() ->  Game.render() -> handler.render(g) -> All objects -> render(g)**
+
+<h2 align="center">Contact and Collision of Objects</h2>
  
