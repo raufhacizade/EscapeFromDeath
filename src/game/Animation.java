@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 
 /**
  *
- * @author Rauf Haciyev
+ * @author Rauf Hajiyev
  */
 public class Animation {
 

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /**
  * Our best friend in Game which will handle updating and rendering all GameObjects existing in the game scene and bunch of other functions. 
- * @author Sayid Akhundov
+ * @author Rauf Hajiyev
  */
 public class Handler implements Serializable{
     ArrayList<GameObject> object = new ArrayList();

@@ -4,10 +4,6 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 
-/**
- * GameObject Example for Coin.
- * @author Sayid Akhundov
- */
 public class Coin extends GameObject{
 
  private int width=25;

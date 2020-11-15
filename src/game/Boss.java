@@ -5,11 +5,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 
-/**
- * GameObject Object Example for an Enemy.
- *
- * @author Sayid Akhundov
- */
 public class Boss extends GameObject {
 
     private Handler handler;

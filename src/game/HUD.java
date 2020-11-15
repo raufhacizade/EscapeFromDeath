@@ -8,7 +8,7 @@ import java.awt.Graphics2D;
 /**
  * Creating a simple information panel for our game to display.
  *
- * @author Sayid Akhundov
+ * @author Rauf Hajiyev
  */
 public class HUD {
 

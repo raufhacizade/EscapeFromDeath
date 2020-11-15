@@ -12,7 +12,7 @@ import java.awt.image.BufferedImage;
 
 /**
  *
- * @author HRauf
+ * @author Rauf Hajiyev
  */
 public class Jacket extends GameObject {
     

@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 /**
  * Realization of Player GameObject
  *
- * @author Sayid Akhundov
+ * @author Rauf Hajiyev
  */
 public class Player extends GameObject {
 
@@ -25,7 +25,7 @@ public class Player extends GameObject {
 
     private static boolean OnPlatform;
     private static boolean Jumping;
-    private int MaxYspeed = 12;
+    private int MaxYspeed = 10;
 
     private boolean isGate;
 
@@ -62,11 +62,11 @@ public class Player extends GameObject {
 
     public void keyboard() {
         if (keyPressed[1]) {
-            setVelX(-7);
+            setVelX(-6);
             leftLooking = true;
             playerLeftWalk.runAnimation();
         } else if (keyPressed[2]) {
-            setVelX(7);
+            setVelX(6);
             leftLooking = false;
             playerRightWalk.runAnimation();
         } else {
@@ -104,10 +104,6 @@ public class Player extends GameObject {
         y += velY;
 
         collision();
-//        jacket.setJumping(Jumping);
-//        jacket.setLeftLooking(leftLooking);
-//        jacket.setVelX(velX);
-//        jacket.setVelY(velY);
 
         if (HEALTH <= 0) {
             System.out.println("Game Over!");
@@ -208,10 +204,6 @@ public class Player extends GameObject {
 
     @Override
     public void render(Graphics g) {
-//        g.setColor(Color.red);
-//        Graphics2D g2d = (Graphics2D) g;
-//        g2d.draw(rightBounds());
-//        g2d.draw(leftBounds());
 
         if (Jumping) {
             if (velY < 0) {
@@ -321,15 +313,4 @@ public class Player extends GameObject {
     public void setWidth(int width) {
         this.width = width;
     }
-
-//    public static int getHeight() {
-//        return height;
-//    }
-//
-//    public static void setHeight(int height) {
-//        this.height = height;
-//    }
-    
-    
-
 }

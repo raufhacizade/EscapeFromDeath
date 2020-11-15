@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * An abstract class for realization of our Game Objects.
- * @author Sayid Akhundov
+ * @author Rauf Hajiyev
  */
 public abstract class GameObject implements Serializable {
     protected int x,y ;

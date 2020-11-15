@@ -8,7 +8,7 @@ import java.awt.event.KeyEvent;
 /**
  * Simplest Keyboard representation which takes keyboard actions and sending integer type information 
  * to the referenced Player Objects public keyPressed array.   
- * @author Sayid Akhundov
+ * @author Rauf Hajiyev
  */
 public class KeyInput extends KeyAdapter {
     private Game game;

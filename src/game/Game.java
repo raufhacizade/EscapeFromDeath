@@ -59,7 +59,7 @@ public class Game extends Canvas implements Runnable {
         handler = new Handler();
 
         background = imgUpload.loadIamge("/back.png");
-        blockImage = imgUpload.loadIamge("/block.png");
+        blockImage = imgUpload.loadIamge("/dblock.png");
     }
 
     public static void main(String[] args) {

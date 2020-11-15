@@ -14,7 +14,7 @@ import java.awt.image.BufferedImage;
 
 /**
  *
- * @author HRauf
+ * @author Rauf Hajiyev
  */
 public class Block extends GameObject {
 

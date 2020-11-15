@@ -3,7 +3,7 @@ package game;
 /**
  * Enum representing the GameObject types in the Game.
  *
- * @author Sayid Akhundov
+ * @author Rauf Hajiyev
  */
 public enum ID {
 
