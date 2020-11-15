@@ -106,3 +106,5 @@ Although, it looks like we transfer screen/view towards to region of interest, w
         g.dispose();
 
 Every code written inside of this 2 translating line will be transferred with world. It means if we want some drawings to not be affected by camera movement and always be rendered at the same place/screen coordinate, we should put them outside of this code. The translate coordinates/Vector represented as “camera.getX(), camera.getY()” are calculated displacement of object of interest in game world. As you see first we translate world enough to render objects in such manner that interest region falls to our screen size/view. 
+
+<h2 align="center"> And this is the end. Hope you enjoy this game.</h2>
