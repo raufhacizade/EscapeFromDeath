@@ -52,8 +52,9 @@ Game.run() ->  Game.render() -> handler.render(g) -> All objects -> render(g)**
 
 <h2 align="center">Contact and Collision of Objects</h2>
 To check collision of two or more object, we use their boundaries which are in shape of rectangle. For example : following figure and Java code shows an example of new get bounds method which returns several related areas of representing boundaries.
+
 <p align="center">
-  <img src="forReadME/main_flow.png">
+  <img src="forReadME/player.jpg">
 </p>
 
     @Override
