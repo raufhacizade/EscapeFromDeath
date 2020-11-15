@@ -45,6 +45,7 @@ Game.run() ->  Game.tick() -> handler.tick() -> All objects -> tick()**
 
 **Rendering Flow :
 Game.run() ->  Game.render() -> handler.render(g) -> All objects -> render(g)**
+<b/>
 
 <h2 align="center">Contact and Collision of Objects</h2>
  
