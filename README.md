@@ -1,5 +1,8 @@
 # EscapeFromDeath
-## This is a game that was written in Java as a platform game.
+## This game is fully written in java. If you want to play this game, just download the source code and run.
 
 ![](forReadME/1.gif)
+![](forReadME/2.gif)
+![](forReadME/3.gif)
+![](forReadME/4.gif)
  
