@@ -8,7 +8,7 @@
 
 The aim of the player in this game is to reach the main door before frost kills him. Also, he needs to escape from enemies and collect the required amount of coins.For exploration and visualization of the game, there some gifs.
 
-From the first image, you can see some type of objects, enemy and player. In the game, there are movable and static blocks which are designed to player can move on surface of their.Also fire and coins are static object, it means they don't have ability to move along the x and y axes. The blue expanning rectangle is represent incoming frost. The simple enemies in the shape of snake just have ability to  move along the x-axis. Also these enemies can decrease the health score of the player at the time of the collision of their boundaries of themself and player.It seems that through the fire is moving, but actually it doesn't change its coordinates and boundaries. Rendering each time different bufferedimage create an appearance that fire is moving.If boundaries of player and fire collide, then health score of player will decrease. If frost and fire collide, then fire will be terminated.
+From the first image, you can see some type of objects. Player is one of the movable object and he can be move along the both of x and y axises.Due to the physic rules, player will be fallen down by gravity if he  jumps or he is not on surface of blocks. In the game, there are movable and static blocks which are designed to player can move on surface of their.Also fire and coins are static object, it means they don't have ability to move along the x and y axes. The blue expanning rectangle is represent incoming frost. The simple enemies in the shape of snake just have ability to  move along the x-axis. Also these enemies can decrease the health score of the player at the time of the collision of their boundaries of themself and player.It seems that through the fire is moving, but actually it doesn't change its coordinates and boundaries. Rendering each time different bufferedimage create an appearance that fire is moving.If boundaries of player and fire collide, then health score of player will decrease. If frost and fire collide, then fire will be terminated.
 
 <p align="center">
   <img src="forReadME/2.gif">
@@ -20,11 +20,13 @@ From the above image, you can see that another movable objects are mid level ene
   <img src="forReadME/3.gif">
 </p>
 
-One of the other movable object is Ice Dams.If player pass under the  Ice Dams, then they will fall down until be stuck in the blocks. If wolf or player will collide with these  Ice Dams, then they will be die immediatly.
+One of the other movable object is Ice Dams.If player passes under the  Ice Dams, then they will fall down until be stuck in the blocks. If wolf or player will collides with these  Ice Dams, then they will be die immediatly.
   
 <p align="center">
   <img src="forReadME/4.gif">
 </p>
+
+In the final part of first level, there is Monster which is much smarter and stronger than other enemies. If player enters in angle of vision of Monster, then it starts to follow player and nothing can damage this enemy. If player has enough coins and gets closer to the Main Door, then door will be opened and player can pass to second level.
 
 <h1 align="center"> The main concepts of the application. </h1>
 
