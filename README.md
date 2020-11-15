@@ -1,5 +1,5 @@
 # EscapeFromDeath
-![](forReadME/1.gif)
+<center> ![](forReadME/1.gif) </center>
 <center>Centered text</center>
 ## This game is fully written in java. If you want to play this game, just download the source code and run.
 
