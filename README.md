@@ -56,7 +56,7 @@ To check collision of two or more object, we use their boundaries which are in s
   <img src="forReadME/player.jpg">
 </p>
 
-`   public Rectangle getBounds() {
+`public Rectangle getBounds() {
         return new Rectangle(x, y, width, height);
     }
 
