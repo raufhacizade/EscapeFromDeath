@@ -36,6 +36,8 @@ In the final part of first level, there is Monster which is much smarter and str
 
 First of all, classes of the movable and static objects are extended from the **GameObject** abstract class.GameObject class holds positions and speeds (according to arrows of the X and Y), gravity value, info of being movable, ID number,  boundaries and also tick(), render() methods. 
 
+<h2 align="center">tick() and render() methods</h2>
+
 The **tick()** and **render()** methods are the most important methods of our program. Both of these methods are called 60 times each second. The main purpose of the tick method is to update data of each object (for example its position, x and y speeds, acceleration and etc). The render method is used to draw our shape of objects.
 
 **Updating (ticking) Flow :
