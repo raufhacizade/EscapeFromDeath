@@ -8,11 +8,13 @@
 
 The aim of the player in this game is to reach the main door before frost kills him. Also, he needs to escape from enemies and collect the required amount of coins.For exploration and visualization of the game, there some gifs.
 
-From the first image, you can see some type of objects, enemy and player. In the game, there are movable and static blocks which are designed to player can move on surface of their.Also fire and coins are static object, it means they don't have ability to move according to the x and y axis. The blue expanning rectangle is represent incoming frost. The simple enemies in the shape of snake just have ability to  move according to the axises of x and y. Also these enemies can decrease the health score of the player at the time of the collision of their boundaries of themself and player.It seems that through the fire is moving, but actually it doesn't change its coordinates and boundaries. Rendering each time different bufferedimage create an appearance that fire is moving.If boundaries of player and fire collide, then health score of player will decrease. If frost and fire collide, then fire will be terminated.
+From the first image, you can see some type of objects, enemy and player. In the game, there are movable and static blocks which are designed to player can move on surface of their.Also fire and coins are static object, it means they don't have ability to move along the x and y axes. The blue expanning rectangle is represent incoming frost. The simple enemies in the shape of snake just have ability to  move along the x-axis. Also these enemies can decrease the health score of the player at the time of the collision of their boundaries of themself and player.It seems that through the fire is moving, but actually it doesn't change its coordinates and boundaries. Rendering each time different bufferedimage create an appearance that fire is moving.If boundaries of player and fire collide, then health score of player will decrease. If frost and fire collide, then fire will be terminated.
 
 <p align="center">
   <img src="forReadME/2.gif">
 </p>
+
+From the above image, you can see that another movable objects are mid level enemy (Wolf), stones and doors. Mid level enemy is a little bit smarter than simple enemy. If boundaries of player collide with angle of vision of the Wolf, then wolf starts to follow the player  along the x-axis until blocks stops it. There are two type of stone. The stone ,which is in the shpe of circle, can be moved by the player along the x-axis and player can open the door only  by pressing another appropriate stone with this one. If player push the circle stone forward to the Wolf, then he can be kill Wolf.
 
 <p align="center">
   <img src="forReadME/3.gif">
