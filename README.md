@@ -19,6 +19,8 @@ From the above image, you can see that another movable objects are mid level ene
 <p align="center">
   <img src="forReadME/3.gif">
 </p>
+
+One of the other movable object is Ice Dams.If player pass under the  Ice Dams, then they will fall down until be stuck in the blocks. If wolf or player will collide with these  Ice Dams, then they will be die immediatly.
   
 <p align="center">
   <img src="forReadME/4.gif">
