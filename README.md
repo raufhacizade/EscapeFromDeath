@@ -32,9 +32,9 @@ First of all, classes of the movable and static objects are extended from the **
 
 The **tick()** and **render()** methods are the most important methods of our program. Both of these methods are called 60 times each second. The main purpose of the tick method is to update data of each object (for example its position, x and y speeds, acceleration and etc). The render method is used to draw our shape of objects.
 
-Updating (ticking) Flow :
-Game.run() ->  Game.tick() -> handler.tick() -> All objects -> tick()
+**Updating (ticking) Flow :
+Game.run() ->  Game.tick() -> handler.tick() -> All objects -> tick()**
 
-Rendering Flow :
-Game.run() ->  Game.render() -> handler.render(g) -> All objects -> render(g)
+**Rendering Flow :
+Game.run() ->  Game.render() -> handler.render(g) -> All objects -> render(g)**
  
