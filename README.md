@@ -56,7 +56,7 @@ To check collision of two or more object, we use their boundaries which are in s
   <img src="forReadME/main_flow.png">
 </p>
 
-`@Override
+    @Override
     public Rectangle getBounds() {
         return new Rectangle(x, y, width, height);
     }
@@ -75,7 +75,7 @@ To check collision of two or more object, we use their boundaries which are in s
 
     public Rectangle rightBounds() {
         return new Rectangle(x - 5 + width - width / 4, y + height / 6, width / 4 + 5, height - height / 3);
-    }`
+    }
 
 
  
