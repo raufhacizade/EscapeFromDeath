@@ -59,11 +59,9 @@ Game.run() ->  Game.render() -> handler.render(g) -> All objects -> render(g)**
 
 The **render()** method is used to draw our shape of objects. For creating animation illusion, It renders the window continuously by drawing the new positions of each object.
 
-For more information:
+For more information: <b/>
 [12 Principles of Animation](https://www.youtube.com/watch?v=uDqjIdI4bF4&feature=youtu.be&ab_channel=AlanBeckerTutorials)
-
 [Graphics2D Class in Java](https://docs.oracle.com/javase/7/docs/api/java/awt/Graphics2D.html)
-
 [BufferedImage Class in Java](https://docs.oracle.com/javase/7/docs/api/java/awt/image/BufferedImage.html)
 <b/>
 
