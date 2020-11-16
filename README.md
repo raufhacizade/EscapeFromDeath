@@ -5,7 +5,7 @@
 </p>
 
 <h2 align="center"> This game is fully written in java. If you want to play this game, just download the source code and run. </h2>
-<b/>
+<br/>
 
 The aim of the player in this game is to reach the main door before frost kills him. Also, he needs to escape from enemies and collect the required amount of coins.For exploration and visualization of the game, there some gifs.
 
@@ -28,7 +28,7 @@ One of the other movable object is Ice Dams.If player passes under the  Ice Dams
 </p>
 
 In the final part of first level, there is Monster which is much smarter and stronger than other enemies. If player enters in angle of vision of Monster, then it starts to follow player and nothing can damage this enemy. If player has enough coins and gets closer to the Main Door, then door will be opened and player can pass to second level.
-<b/>
+<br/>
 
 <h1 align="center"> The Main Concepts of the Application. </h1>
 
@@ -39,7 +39,7 @@ In the final part of first level, there is Monster which is much smarter and str
 First of all, classes of the movable and static objects are extended from the **GameObject** abstract class.GameObject class holds positions and speeds (according to arrows of the X and Y), gravity value, info of being movable, ID number,  boundaries and also tick(), render() methods.The ID actually is an Enum type and it is used to differentiate objects types.
 
 <h2 align="center">The Game Map</h2>
-<b/>
+<br/>
 
 <p align="center">
   <img src="Images/1thLevel.png">
@@ -47,7 +47,7 @@ First of all, classes of the movable and static objects are extended from the **
 I designed an image which represents the game map. Namely, it keeps initial coordinates of each objects. For example : player, movable and static blocks, enemies, fires, coins and etc. How does it work? After loading  the map image file as BufferedImage, program started  Loop along pixels and obtain RGB channels for each pixel.For example, if RGB color of pixel is RGB(34 ,177,76) - like green, program will initiliaze new instance of Player class. After loop, now you should have all information which you can use in object creation.Pixsel coordinates of referred code (key or barcode) will give you the position of your object on the level/world. (If you want, you can check constructLevel() method in Game Class).
 
 <h2 align="center">tick() and render() Methods</h2>
-<b/>
+<br/>
 
 The **tick()** and **render()** methods are the most important methods of our program. Both of these methods are called 60 times each second. The main purpose of the **tick()** method is to update data of each object (for example its position, x and y speeds, acceleration and etc). 
 
@@ -59,14 +59,13 @@ Game.run() ->  Game.render() -> handler.render(g) -> All objects -> render(g)**
 
 The **render()** method is used to draw our shape of objects. For creating animation illusion, It renders the window continuously by drawing the new positions of each object.
 
-For more information: 
-<b/>
+For more information: <br/>
 [12 Principles of Animation](https://www.youtube.com/watch?v=uDqjIdI4bF4&feature=youtu.be&ab_channel=AlanBeckerTutorials)
-<b/>
+<br/>
 [Graphics2D Class in Java](https://docs.oracle.com/javase/7/docs/api/java/awt/Graphics2D.html)
-<b/>
+<br/>
 [BufferedImage Class in Java](https://docs.oracle.com/javase/7/docs/api/java/awt/image/BufferedImage.html)
-<b/>
+<br/>
 
 <h2 align="center">Contact and Collision of Objects</h2>
 To check collision of two or more object, we use their boundaries which are in shape of rectangle. For example : following figure and Java code shows an example of new get bounds method which returns several related areas of representing boundaries.
@@ -97,7 +96,7 @@ To check collision of two or more object, we use their boundaries which are in s
     }
     
 Using these rectangles and also adding some conditions it’s possible to track the behavior of the collision. For example: If an object area have been crossed with main getBound() rectangle (Pink rectangle). It means there was a collision between these two objects. Now it’s time to check the nature of this collision. - If it crossed with upBound (Green rectangle) and the velocity along Y (velY) of crossed object is positive (downward), You can say that this object is falling to players head and collision behavior has to be done for this situation
-<b/>
+<br/>
 
 <h2 align="center">Camera</h2>
 Camera represents a realization which helps on following objects in motion creating a simple following Cameraman effect. When you have Large world game which runs out from your screen canvas, you should have a system which follows your object of interest (often Player) and transfers world as this object or region always be rendered on your canvas/screen.
