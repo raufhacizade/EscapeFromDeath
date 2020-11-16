@@ -49,13 +49,22 @@ I designed an image which represents the game map. Namely, it keeps initial coor
 <h2 align="center">tick() and render() Methods</h2>
 <b/>
 
-The **tick()** and **render()** methods are the most important methods of our program. Both of these methods are called 60 times each second. The main purpose of the tick method is to update data of each object (for example its position, x and y speeds, acceleration and etc). The render method is used to draw our shape of objects.
+The **tick()** and **render()** methods are the most important methods of our program. Both of these methods are called 60 times each second. The main purpose of the **tick()** method is to update data of each object (for example its position, x and y speeds, acceleration and etc). 
 
 **Updating (ticking) Flow :
 Game.run() ->  Game.tick() -> handler.tick() -> All objects -> tick()**
 
 **Rendering Flow :
 Game.run() ->  Game.render() -> handler.render(g) -> All objects -> render(g)**
+
+The **render()** method is used to draw our shape of objects. For creating animation illusion, It renders the window continuously by drawing the new positions of each object.
+
+For more information:
+[12 Principles of Animation](https://www.youtube.com/watch?v=uDqjIdI4bF4&feature=youtu.be&ab_channel=AlanBeckerTutorials)
+
+[Graphics2D Class in Java](https://docs.oracle.com/javase/7/docs/api/java/awt/Graphics2D.html)
+
+[BufferedImage Class in Java](https://docs.oracle.com/javase/7/docs/api/java/awt/image/BufferedImage.html)
 <b/>
 
 <h2 align="center">Contact and Collision of Objects</h2>
